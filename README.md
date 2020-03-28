@@ -27,4 +27,6 @@ set(GLEW_INCLUDE_DIR "C:/glew-2.1.0/include")
 set(GLEW_LIBRARY "C:/glew-2.1.0/lib/Release/x64/glew32.lib")
 ```
 
-I use GLEW and GLFW3 here. It should work similarly if you want to use, say, GLUT.
+While I use GLEW and GLFW3 here, it should work similarly if you want to use, say, GLUT and other libraries. 
+
+Feedback and contributions are appreciated :)
