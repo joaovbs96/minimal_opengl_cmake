@@ -15,7 +15,7 @@ set(GLEW_INCLUDE_DIR "[directory you unpacked GLEW]/include")
 set(GLEW_LIBRARY "[directory you unpacked GLEW]/lib/Release/[x64 or Win32]/glew32.lib")
 ```
 
-For me, in the script contained in the '''src/''' folder, that is:
+For me, in the script contained in the ```src/``` folder, that is:
 
 ```cmake
 # GLFW3 directories - change according to your version and compiler
