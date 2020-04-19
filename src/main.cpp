@@ -16,12 +16,19 @@ int main() {
 
   window = glfwCreateWindow(600, 600, "A window", nullptr, nullptr);
 
+  // check if window was created successfully
   if (window == nullptr) {
     std::cerr << "GLFW failed to create window." << std::endl;
     return -1;
   }
-
+  
   glfwMakeContextCurrent(window);
+  
+  if (glewInit() != GLEW_OK) {
+    std::cerr << "GLFW failed to create window." << std::endl;
+    glfwTerminate();
+    return -1;
+  }
 
   while (glfwWindowShouldClose(window) == 0) {
     // clear the window
